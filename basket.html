@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Avion</title>
-  <script src="https://cdn.jsdelivr.net/npm/transfer-elements@1.0.7/dist/transfer-elements.min.js" defer></script>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="page__body">
@@ -55,11 +54,6 @@
                 <path d="M8 1C6.61553 1 5.26216 1.41054 4.11101 2.17971C2.95987 2.94888 2.06266 4.04213 1.53285 5.32122C1.00303 6.6003 0.86441 8.00776 1.13451 9.36563C1.4046 10.7235 2.07129 11.9708 3.05026 12.9497C4.02922 13.9287 5.2765 14.5954 6.63437 14.8655C7.99224 15.1356 9.3997 14.997 10.6788 14.4672C11.9579 13.9373 13.0511 13.0401 13.8203 11.889C14.5895 10.7378 15 9.38447 15 8C14.9979 6.14413 14.2597 4.36486 12.9474 3.05256C11.6351 1.74026 9.85588 1.00209 8 1ZM5 13.1882V12.5C5.00044 12.1023 5.15862 11.721 5.43983 11.4398C5.72104 11.1586 6.10231 11.0004 6.5 11H9.5C9.89769 11.0004 10.279 11.1586 10.5602 11.4398C10.8414 11.721 10.9996 12.1023 11 12.5V13.1882C10.0896 13.7199 9.05426 14 8 14C6.94574 14 5.91042 13.7199 5 13.1882ZM11.9963 12.4629C11.9863 11.807 11.7191 11.1813 11.2521 10.7206C10.7852 10.2599 10.156 10.0011 9.5 10H6.5C5.84405 10.0011 5.2148 10.2599 4.74786 10.7206C4.28093 11.1813 4.01369 11.807 4.00375 12.4629C3.09703 11.6533 2.45762 10.5873 2.17017 9.40623C1.88272 8.22513 1.9608 6.98457 2.39407 5.84883C2.82734 4.71309 3.59536 3.73573 4.59644 3.04618C5.59751 2.35663 6.78442 1.98741 8 1.98741C9.21558 1.98741 10.4025 2.35663 11.4036 3.04618C12.4046 3.73573 13.1727 4.71309 13.6059 5.84883C14.0392 6.98457 14.1173 8.22513 13.8298 9.40623C13.5424 10.5873 12.903 11.6533 11.9963 12.4629Z" />
               </svg>
             </button>
-            <button class="btn-reset burger">
-              <span class="burger__line"></span>
-              <span class="burger__line"></span>
-              <span class="burger__line"></span>
-            </button>
           </div>
         </div>
       </div>
@@ -99,179 +93,72 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="cart">
       <div class="container">
-        <div class="hero__content">
-          <div class="hero__text">
-            <h1 class="hero__title">The furniture brand for the future, with timeless designs</h1>
-            <a href="#" class="btn btn--theme-dark hero__link">View collection</a>
-            <p class="hero__desc">A new era in eco friendly furniture with Avelon, the French luxury retail brand
-              with nice fonts, tasteful colors and a beautiful way to display things digitally 
-              using modern web technologies.</p>
+        <h1 class="cart__title visually-hidden">Cart</h1>
+        <div class="cart__content">
+          <div class="cart__table">
+            <div class="cart__row cart__row--heading cart-grid">
+              <div class="cart__col">Product</div>
+              <div class="cart__col cart__col--quantity">Quantity</div>
+              <div class="cart__col cart__col--total">Total</div>
+            </div>
+            <div class="cart__row cart-grid">
+              <div class="cart__col cart__col--img">
+                <img src="img/cart-1.jpg" width="109" height="134" alt="" class="cart__img">
+              </div>
+              <div class="cart__col cart__col--info">
+                <div class="cart__info">
+                  <h3 class="cart__title">Graystone vase</h3>
+                  <div class="cart__desc">A timeless ceramic vase with a tri color grey glaze.</div>
+                  <span class="cart__price">£85</span>
+                </div>
+              </div>
+              <div class="cart__col cart__col--quantity">
+                <div class="stepper stepper--cart">
+                  <button class="btn-reset stepper__btn  stepper__btn--minus" aria-label="decrease quantitity" disabled >-</button>
+                  <input type="number" min="1" max="5" value="1" class="stepper__input">
+                  <button class="btn-reset stepper__btn stepper__btn--plus" aria-label="increase quantitity">+</button>
+                </div>
+              </div>
+              <div class="cart__col cart__col--total">
+                <div class="cart__total">£85</div>
+              </div>
+            </div>
+            <div class="cart__row cart-grid">
+              <div class="cart__col cart__col--img">
+                <img src="img/cart-2.jpg" width="109" height="134" alt="" class="cart__img">
+              </div>
+              <div class="cart__col cart__col--info">
+                <div class="cart__info">
+                  <h3 class="cart__title">Graystone vase</h3>
+                  <div class="cart__desc">A timeless ceramic vase with a tri color grey glaze.</div>
+                  <span class="cart__price">£85</span>
+                </div>
+              </div>
+              <div class="cart__col cart__col--quantity">
+                <div class="stepper stepper--cart">
+                  <button class="btn-reset stepper__btn  stepper__btn--minus" aria-label="decrease quantitity" disabled>-</button>
+                  <input type="number" min="1" max="5" value="1" class="stepper__input">
+                  <button class="btn-reset stepper__btn stepper__btn--plus" aria-label="increase quantitity">+</button>
+                </div>
+              </div>
+              <div class="cart__col cart__col--total">
+                <div class="cart__total">£85</div>
+              </div>
+            </div>
           </div>
-          <img src="img/hero.jpg" width="520" height="584" alt="Chair" class="hero__img">
-        </div>
-      </div>
-    </section>
-    <section class="benefits">
-      <div class="container">
-        <h2 class="title title--small title--centered title--mb-large">What makes our brand different</h2>
-        <ul class="list-reset benefits__list grid">
-          <li class="benefits__item benefits__item--next">
-            <h3 class="benefits__subtitle">Next day as standard</h3>
-            <p class="benefits__desc">Order before 3pm and get your order
-              the next day as standard</p>
-          </li>
-          <li class="benefits__item benefits__item--made">
-            <h3 class="benefits__subtitle">Made by true artisans</h3>
-            <p class="benefits__desc">Handmade crafted goods made with
-              real passion and craftmanship</p>
-          </li>
-          <li class="benefits__item benefits__item--prices">
-            <h3 class="benefits__subtitle">Unbeatable prices</h3>
-            <p class="benefits__desc">For our materials and quality you won’t find better prices anywhere</p>
-          </li>
-          <li class="benefits__item benefits__item--packaging">
-            <h3 class="benefits__subtitle">Recycled packaging</h3>
-            <p class="benefits__desc">We use 100% recycled packaging to ensure our footprint is manageable</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="products">
-      <div class="container">
-        <h2 class="products__title title title--large title--mb-large">New ceramics</h2>
-        <ul class="list-reset products__list grid">
-          <li class="products__item">
-            <article class="product">
-              <div class="product__top">
-                <img src="img/product-1.jpg" class="product__img" width="305" height="375" alt="">
+          <div class="cart__bottom">
+            <div class="cart__bottom-info">
+              <div class="cart__text">Taxes and shipping are calculated at checkout</div>
+              <div class="cart__subtotal">
+                Subtotal <span class="cart__subtotal-price">£210</span>
               </div>
-              <div class="product__content">
-                <h3 class="product__title">
-                  <a href="#" class="product__link">The Dandy chair</a>
-                </h3>
-                <span class="product__price">£250</span>
-              </div>
-            </article>
-          </li>
-          <li class="products__item">
-            <article class="product">
-              <div class="product__top">
-                <img src="img/product-2.jpg" class="product__img" width="305" height="375" alt="">
-              </div>
-              <div class="product__content">
-                <h3 class="product__title">
-                  <a href="#" class="product__link">Rustic Vase Set</a>
-                </h3>
-                <span class="product__price">£155</span>
-              </div>
-            </article>
-          </li>
-          <li class="products__item">
-            <article class="product">
-              <div class="product__top">
-                <img src="img/product-3.jpg" class="product__img" width="305" height="375" alt="">
-              </div>
-              <div class="product__content">
-                <h3 class="product__title">
-                  <a href="#" class="product__link">The Silky Vase</a>
-                </h3>
-                <span class="product__price">£125</span>
-              </div>
-            </article>
-          </li>
-          <li class="products__item">
-            <article class="product">
-              <div class="product__top">
-                <img src="img/product-4.png" class="product__img" width="305" height="375" alt="">
-              </div>
-              <div class="product__content">
-                <h3 class="product__title">
-                  <a href="#" class="product__link">The Lucy Lamp</a>
-                </h3>
-                <span class="product__price">£399</span>
-              </div>
-            </article>
-          </li>
-        </ul>
-        <div class="centered">
-          <a href="#" class="btn btn--theme-light products__btn">View collection</a>
-        </div>
-      </div>
-    </section>
-    <section class="products">
-      <div class="container">
-        <h2 class="products__title title title--large title--mb-large">Our popular products</h2>
-        <ul class="list-reset products__list products__list--mobile-slider grid">
-          <li class="products__item products__item--big">
-            <article class="product">
-              <div class="product__top">
-                <img src="img/Large.jpg" class="product__img" width="630" height="375" alt="">
-              </div>
-              <div class="product__content">
-                <h3 class="product__title">
-                  <a href="#" class="product__link">Rustic Vase Set</a>
-                </h3>
-                <span class="product__price">£155</span>
-              </div>
-            </article>
-          </li>
-          <li class="products__item">
-            <article class="product">
-              <div class="product__top">
-                <img src="img/product-1.jpg" class="product__img" width="305" height="375" alt="">
-              </div>
-              <div class="product__content">
-                <h3 class="product__title">
-                  <a href="#" class="product__link">The Dandy chair</a>
-                </h3>
-                <span class="product__price">£250</span>
-              </div>
-            </article>
-          </li>
-          <li class="products__item">
-            <article class="product">
-              <div class="product__top">
-                <img src="img/product-5.jpg" class="product__img" width="305" height="375" alt="">
-              </div>
-              <div class="product__content">
-                <h3 class="product__title">
-                  <a href="#" class="product__link">The Dandy chair</a>
-                </h3>
-                <span class="product__price">£250</span>
-              </div>
-            </article>
-          </li>
-        </ul>
-        <div class="centered">
-          <a href="#" class="btn btn--theme-light products__btn">View collection</a>
-        </div>
-      </div>
-    </section>
-    <section class="newsletter">
-      <div class="container">
-        <div class="newsletter__content">
-          <h2 class="title title--large-xl title--mb-small-xl title--centered newsletter__title">Join the club and get the benefits</h2>
-          <p class="newsletter__desc">Sign up&nbsp;for our newsletter and receive exclusive offers on&nbsp;new ranges, sales, pop up&nbsp;stores and more</p>
-          <form action="#" method="post" class="form newsletter__form">
-            <input type="email" name="email" required class="form__input" placeholder="your@email.com">
-            <button class="form__btn btn btn--theme-darker" type="submit">Sign up</button>
-          </form>
-        </div>
-      </div>
-    </section>
-    <section class="about">
-      <div class="container">
-        <div class="about__content">
-          <div class="about__info">
-            <h2 class="title title--small about__title">From a studio in London to a global brand with
-              over 400 outlets</h2>
-            <p class="about__desc">When we started Avion, the idea was simple. Make high quality furniture affordable and available for the mass market.</p>
-            <p class="about__desc">Handmade, and lovingly crafted furniture and homeware is what we live, breathe and design so our Chelsea boutique become the hotbed for the London interior design community.</p>
-            <a href="#" class="btn btn--theme-light about__btn">Get in touch</a>
+            </div>
+            <div class="cart__btn">
+              <a href="#" class="btn btn--theme-darker">Go to checkout</a>
+            </div>
           </div>
-          <img src="img/about.jpg" width="720" height="602" alt="" class="about__img">
         </div>
       </div>
     </section>

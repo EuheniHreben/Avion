@@ -1,0 +1,23 @@
+.inner-hero {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner-hero--all {
+  background-image: url(../../img/inner-hero.jpg);
+}
+
+.inner-hero__content {
+  display: flex;
+  align-items: flex-end;
+  min-height: 209px;
+}
+
+.inner-hero__title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 140%;
+  color: var(--white);
+}

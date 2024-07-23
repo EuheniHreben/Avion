@@ -1,0 +1,19 @@
+.catalog {
+  padding: 36px 0;
+}
+
+.catalog__column {
+  padding-top: 12px;
+  grid-column: 3 span;
+}
+
+.catalog__wrapper {
+  grid-column: 9 span;
+}
+
+.catalog__products {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 36px;
+}

@@ -1,0 +1,138 @@
+.cart {
+  padding: 84px 0;
+  background: var(--light-grey);
+}
+
+.cart__content {
+  padding: 72px 62px 54px 62px;  
+  background: var(--white);
+}
+
+.cart__table {
+  border-bottom: 1px solid var(--light-grey);
+  margin-bottom: 20px;
+}
+
+.cart__row {
+  margin-bottom: 32px;
+}
+
+.cart-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.cart__col {
+  grid-column: 6 span;
+}
+
+.cart__img {
+  display: block;
+}
+
+.cart__col--quantity {
+  grid-column: 2 span;
+  padding-left: 75px;
+}
+
+.cart__col--total {
+  grid-column: 2 span;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart__row--heading {
+  margin-bottom: 28px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--light-grey);
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: var(--dark-primary);
+}
+
+.cart__col--img {
+  grid-column: 1 span;
+}
+
+.cart__info {
+  padding-left: 17px;
+  max-width: 240px;
+}
+
+.cart__col--info {
+  grid-column: 5 span;
+}
+
+.cart__title {
+  margin: 0;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: var(--dark-primary);
+  margin-bottom: 8px;
+}
+
+.cart__desc {
+  margin-bottom: 8px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--dark-primary);
+}
+
+.cart__total {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--dark-primary);
+  text-align: right;
+}
+
+.stepper--cart {
+  margin-top: 12px;
+  background: var(--light-grey);
+}
+
+.cart__bottom-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.cart__text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: right;
+  color: var(--primary);
+}
+
+.cart__subtotal {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: right;
+  color: var(--primary);
+}
+
+.cart__subtotal-price {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: right;
+  color: var(--dark-primary);
+}
+
+.cart__btn {
+  display: flex;
+  justify-content: flex-end;
+}

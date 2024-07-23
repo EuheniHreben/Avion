@@ -43,4 +43,5 @@
 .hero__img {
   flex-shrink: 0;
   height: 100%;
+  display: block;
 }

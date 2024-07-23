@@ -1,11 +1,11 @@
+.header__container {
+  display: flex;
+}
+
 .header__top {
   --container-width: 1330px;
   padding: 20px 0;
   background-color: var(--white);
-}
-
-.header__container {
-  display: flex;
 }
 
 .header__top-container {

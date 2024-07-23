@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .page {
@@ -10,6 +11,10 @@
 
 .page__body {
   font-family: var(--font-family);
+  min-width: 390px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .container {
@@ -29,4 +34,24 @@
   padding: 0;
   background: transparent;
   cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.centered {
+  padding-top: 36px;
+  text-align: center;
+}
+
+.stop-scroll {
+  overflow: hidden;
 }

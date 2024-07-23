@@ -44,3 +44,10 @@
 .benefits__item--packaging {
   background-image: url('../../img/benefits-4.svg');
 }
+
+.benefits--about .benefits__item {
+  background-color: var(--light-grey);
+  padding: 48px;
+  padding-top: 84px;
+  background-position: 48px 48px;
+}

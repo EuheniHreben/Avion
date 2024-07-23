@@ -1,0 +1,75 @@
+.stepper {
+  display: inline-flex;
+  user-select: none;
+  background: var(--white);
+}
+
+.stepper__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  flex-shrink: 0;
+  padding: 12px 16px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--dark-primary);
+  transition: var(--text-trs);
+}
+
+.stepper__input {
+  font-family: inherit;
+  border: none;
+  width: calc(100% - 82px);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--dark-primary);
+  text-align: center;
+  background-color: inherit;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.stepper__input:focus {
+  outline: none;
+}
+
+.stepper__btn:disabled {
+  pointer-events: none;
+  color: var(--border-grey);
+}
+
+.stepper__btn:focus {
+  outline: none;
+}
+
+.stepper__btn:focus-visible {            
+  outline: 2px dashed var(--dark-primary);
+  outline-offset: var(--outline-offset);
+}
+
+@media (any-hover: hover) {
+  .stepper__btn:hover {
+    color: var(--primary);
+    background-color: var(--light-grey);
+  }
+}
+
+.stepper__btn:active {
+  color: var(--border-grey);
+  background-color: var(--dark-primary);
+}
+
+.stepper__input:focus {
+  outline: none;
+}
+
+.stepper__input:focus-visible {            
+  outline: 2px dashed var(--primary);
+  outline-offset: var(--outline-offset);
+}
